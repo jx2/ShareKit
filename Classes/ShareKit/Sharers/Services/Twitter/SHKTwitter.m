@@ -361,12 +361,14 @@ static NSString *const kSHKTwitterUserInfo=@"kSHKTwitterUserInfo";
 	
 	if (!aRequest.success || result == nil || [NSURL URLWithString:result] == nil)
 	{
+		#if(0)
 		// TODO - better error message
 		[[[[UIAlertView alloc] initWithTitle:SHKLocalizedString(@"Shorten URL Error")
 											  message:SHKLocalizedString(@"We could not shorten the URL.")
 											 delegate:nil
 								 cancelButtonTitle:SHKLocalizedString(@"Continue")
 								 otherButtonTitles:nil] autorelease] show];
+		#endif
         
         NSString *currentStatus = [item customValueForKey:@"status"];
         
