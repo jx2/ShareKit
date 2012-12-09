@@ -10,6 +10,8 @@
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		2825150116730CFB00E76861 /* SHKReadability.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB495A31520349A00505A99 /* SHKReadability.m */; };
+		2825150416730DD400E76861 /* libReadability.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2825150016730C9000E76861 /* libReadability.a */; };
 		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
 		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
 		28F335F11007B36200424DE2 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F335F01007B36200424DE2 /* RootViewController.xib */; };
@@ -182,11 +184,17 @@
 		AABBED6E162F0C1A009D46E4 /* SHKPinboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A536E311DBE3B9004A1712 /* SHKPinboard.m */; };
 		AABBED77162F0C33009D46E4 /* SHKReadItLater.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A536E611DBE3B9004A1712 /* SHKReadItLater.m */; };
 		AABBED80162F0C4D009D46E4 /* SHKTumblr.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C91DF411EBAE4800F31FAE /* SHKTumblr.m */; };
-		AAE40AA2161A1C2900DAA832 /* SHKReadability.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB495A31520349A00505A99 /* SHKReadability.m */; };
 		C0D3077B147BDC8100E74EA3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0D3077A147BDC8100E74EA3 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2825150216730DB300E76861 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 282514F816730C9000E76861;
+			remoteInfo = Readability;
+		};
 		7A2882591553FF96007DC379 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
@@ -298,13 +306,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = AABBED00162F0858009D46E4;
 			remoteInfo = Delicious;
-		};
-		7AC28EE7165A1EE7006D7441 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7AEE037D160E1B4000FEC06E;
-			remoteInfo = Readability;
 		};
 		7AC28EE9165A1EE7006D7441 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -454,6 +455,7 @@
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* ShareKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2825150016730C9000E76861 /* libReadability.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libReadability.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		28A0AAE50D9B0CCF005BE974 /* ShareKit_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareKit_Prefix.pch; sourceTree = "<group>"; };
 		28AD735F0D9D9599002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
@@ -788,6 +790,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		282514FB16730C9000E76861 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7A0F9240156BA2A0009CB40A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -877,6 +886,7 @@
 				7AC28F1E165A21C2006D7441 /* libPinboard.a in Frameworks */,
 				7AC28F1F165A21C2006D7441 /* libPrint.a in Frameworks */,
 				7AC28F20165A21C2006D7441 /* libReachability.a in Frameworks */,
+				2825150416730DD400E76861 /* libReadability.a in Frameworks */,
 				7AC28F21165A21C2006D7441 /* libRead It Later.a in Frameworks */,
 				7AC28F22165A21C2006D7441 /* libSave to Album.a in Frameworks */,
 				7AC28F23165A21C2006D7441 /* libShareKitCore.a in Frameworks */,
@@ -897,13 +907,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7AC2A39316597F4C0089ABE8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7AEE0380160E1B4000FEC06E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1107,6 +1110,7 @@
 				AABBED7D162F0C33009D46E4 /* libRead It Later.a */,
 				AABBED86162F0C4D009D46E4 /* libTumblr.a */,
 				7AC2A3A016597F4C0089ABE8 /* libSina Weibo.a */,
+				2825150016730C9000E76861 /* libReadability.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1898,6 +1902,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		282514FC16730C9000E76861 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7A0F9241156BA2A0009CB40A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1970,13 +1981,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7AC2A39416597F4C0089ABE8 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7AEE0381160E1B4000FEC06E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2151,6 +2155,23 @@
 			productName = ShareKit;
 			productReference = 1D6058910D05DD3D006BFB54 /* ShareKitDemo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		282514F816730C9000E76861 /* Readability */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 282514FD16730C9000E76861 /* Build configuration list for PBXNativeTarget "Readability" */;
+			buildPhases = (
+				282514F916730C9000E76861 /* Sources */,
+				282514FB16730C9000E76861 /* Frameworks */,
+				282514FC16730C9000E76861 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Readability;
+			productName = ShareKitLibrary;
+			productReference = 2825150016730C9000E76861 /* libReadability.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 		7A0F91D1156BA2A0009CB40A /* Static Library Core */ = {
 			isa = PBXNativeTarget;
@@ -2330,7 +2351,6 @@
 				7AC28EE2165A1EE7006D7441 /* PBXTargetDependency */,
 				7AC28EE4165A1EE7006D7441 /* PBXTargetDependency */,
 				7AC28EE6165A1EE7006D7441 /* PBXTargetDependency */,
-				7AC28EE8165A1EE7006D7441 /* PBXTargetDependency */,
 				7AC28EEA165A1EE7006D7441 /* PBXTargetDependency */,
 				7AC28EEC165A1EE7006D7441 /* PBXTargetDependency */,
 				7AC28EEE165A1EE7006D7441 /* PBXTargetDependency */,
@@ -2344,6 +2364,7 @@
 				7AC28EFE165A1EE7006D7441 /* PBXTargetDependency */,
 				7AC28F00165A1EE7006D7441 /* PBXTargetDependency */,
 				7AC28F02165A1EE7006D7441 /* PBXTargetDependency */,
+				2825150316730DB300E76861 /* PBXTargetDependency */,
 				7AC28F04165A1EE7006D7441 /* PBXTargetDependency */,
 				7AC28F06165A1EE7006D7441 /* PBXTargetDependency */,
 				7AC28F08165A1EE7006D7441 /* PBXTargetDependency */,
@@ -2386,22 +2407,6 @@
 			name = "Sina Weibo";
 			productName = ShareKitLibrary;
 			productReference = 7AC2A3A016597F4C0089ABE8 /* libSina Weibo.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		7AEE037D160E1B4000FEC06E /* Readability */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7AEE0389160E1B4000FEC06E /* Build configuration list for PBXNativeTarget "Readability" */;
-			buildPhases = (
-				7AEE037E160E1B4000FEC06E /* Sources */,
-				7AEE0380160E1B4000FEC06E /* Frameworks */,
-				7AEE0381160E1B4000FEC06E /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Readability;
-			productName = ShareKitLibrary;
 			productType = "com.apple.product-type.library.static";
 		};
 		AABBECB6162F063F009D46E4 /* Print */ = {
@@ -2816,7 +2821,7 @@
 				AABBECEE162F080F009D46E4 /* Text Message */,
 				AABBECF7162F0835009D46E4 /* Kippt */,
 				AABBED00162F0858009D46E4 /* Delicious */,
-				7AEE037D160E1B4000FEC06E /* Readability */,
+				282514F816730C9000E76861 /* Readability */,
 				AABBED09162F087F009D46E4 /* Diigo */,
 				AABBED12162F08A3009D46E4 /* VKontakte */,
 				AABBED1C162F08E6009D46E4 /* Evernote */,
@@ -2894,6 +2899,14 @@
 				43A5383A11DBE493004A1712 /* RootViewController.m in Sources */,
 				43A5383B11DBE493004A1712 /* ShareKitAppDelegate.m in Sources */,
 				7AA40570146F1D6400685C81 /* ShareKitDemoConfigurator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		282514F916730C9000E76861 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2825150116730CFB00E76861 /* SHKReadability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3061,14 +3074,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AC2A3A116597F9C0089ABE8 /* SHKSinaWeibo.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7AEE037E160E1B4000FEC06E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AAE40AA2161A1C2900DAA832 /* SHKReadability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3251,6 +3256,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2825150316730DB300E76861 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 282514F816730C9000E76861 /* Readability */;
+			targetProxy = 2825150216730DB300E76861 /* PBXContainerItemProxy */;
+		};
 		7A28825A1553FF96007DC379 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7AB5342D1552AADD00171BCE /* Static Library */;
@@ -3330,11 +3340,6 @@
 			isa = PBXTargetDependency;
 			target = AABBED00162F0858009D46E4 /* Delicious */;
 			targetProxy = 7AC28EE5165A1EE7006D7441 /* PBXContainerItemProxy */;
-		};
-		7AC28EE8165A1EE7006D7441 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7AEE037D160E1B4000FEC06E /* Readability */;
-			targetProxy = 7AC28EE7165A1EE7006D7441 /* PBXContainerItemProxy */;
 		};
 		7AC28EEA165A1EE7006D7441 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -3478,6 +3483,66 @@
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "Submodules/** Classes/ShareKit/**";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		282514FE16730C9000E76861 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/ShareKitLibrary.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShareKitLibrary/ShareKitLibrary-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = Readability;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		282514FF16730C9000E76861 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/ShareKitLibrary.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShareKitLibrary/ShareKitLibrary-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = Readability;
+				SKIP_INSTALL = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -4200,66 +4265,6 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = "Sina Weibo";
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		7AEE038A160E1B4000FEC06E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					armv6,
-					"$(ARCHS_STANDARD_32_BIT)",
-				);
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/ShareKitLibrary.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ShareKitLibrary/ShareKitLibrary-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_THUMB_SUPPORT = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-all_load",
-				);
-				PRODUCT_NAME = Readability;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		7AEE038B160E1B4000FEC06E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					armv6,
-					"$(ARCHS_STANDARD_32_BIT)",
-				);
-				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/ShareKitLibrary.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ShareKitLibrary/ShareKitLibrary-Prefix.pch";
-				GCC_THUMB_SUPPORT = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-all_load",
-				);
-				PRODUCT_NAME = Readability;
 				SKIP_INSTALL = YES;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -5590,6 +5595,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		282514FD16730C9000E76861 /* Build configuration list for PBXNativeTarget "Readability" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				282514FE16730C9000E76861 /* Debug */,
+				282514FF16730C9000E76861 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7A0F9243156BA2A0009CB40A /* Build configuration list for PBXNativeTarget "Static Library Core" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -5694,15 +5708,6 @@
 			buildConfigurations = (
 				7AC2A39E16597F4C0089ABE8 /* Debug */,
 				7AC2A39F16597F4C0089ABE8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7AEE0389160E1B4000FEC06E /* Build configuration list for PBXNativeTarget "Readability" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7AEE038A160E1B4000FEC06E /* Debug */,
-				7AEE038B160E1B4000FEC06E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
